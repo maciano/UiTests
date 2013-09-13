@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 2.442 sec <<< FAILURE!
+beforeMethod(com.Tesis.tests.SmokeTestMagento)  Time elapsed: 0 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_35'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:129)
+	at com.Tesis.tests.SmokeTestMagento.beforeMethod(SmokeTestMagento.java:40)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.0.105:8080 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	... 27 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 35 more
+
+afterMethod(com.Tesis.tests.SmokeTestMagento)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.Tesis.commons.UITestHelper.takeScreenShoot(UITestHelper.java:154)
+	at com.Tesis.tests.SmokeTestMagento.afterMethod(SmokeTestMagento.java:101)
+

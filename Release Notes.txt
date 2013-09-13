@@ -1,0 +1,10 @@
+RELEASE NOTES
+
+###### Version 1.0 ######
+
+###### Version 2.0 ######
+- Implementacion del patrón PageObject
+- Maximiza la ventana al inicio para evitar error: Element cannot be scrolled into view
+
+###### Version 3.0 ######
+- 

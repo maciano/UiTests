@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Testing Android"
+           tests="4"
+           failures="2"
+           errors="0"
+           skipped="2"
+           time="0,001">
+  <properties />
+            <testcase name="afterMethod" time="0,000" classname="com.Tesis.tests.SmokeTestMagento">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  com.Tesis.commons.UITestHelper.takeScreenShoot(UITestHelper.java:154)
+  com.Tesis.tests.SmokeTestMagento.afterMethod(SmokeTestMagento.java:101)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+  java.util.concurrent.FutureTask.run(FutureTask.java:138)
+  java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+  java.lang.Thread.run(Thread.java:662)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="beforeMethod" time="0,000" classname="com.Tesis.tests.SmokeTestMagento">
+                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
+                  message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4ecaf82108b2a6cc6f006aae81961236eba93358&apos;, time: &apos;2013-05-22 12:00:17&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_35&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_35'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:129)
+  com.Tesis.tests.SmokeTestMagento.beforeMethod(SmokeTestMagento.java:40)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+  java.util.concurrent.FutureTask.run(FutureTask.java:138)
+  java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+  java.lang.Thread.run(Thread.java:662)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.0.105:8080 refused
+  org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+  org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+  org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+  org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+  org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+  org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:129)
+  com.Tesis.tests.SmokeTestMagento.beforeMethod(SmokeTestMagento.java:40)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+  java.util.concurrent.FutureTask.run(FutureTask.java:138)
+  java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+  java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: Connection refused: connect
+  java.net.PlainSocketImpl.socketConnect(Native Method)
+  java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+  java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+  java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+  java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+  java.net.Socket.connect(Socket.java:529)
+  org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+  org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+  org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+  org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+  org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+  org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+  org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:129)
+  com.Tesis.tests.SmokeTestMagento.beforeMethod(SmokeTestMagento.java:40)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+  java.util.concurrent.FutureTask.run(FutureTask.java:138)
+  java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+  java.lang.Thread.run(Thread.java:662)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="afterClass" time="0.0" classname="com.Tesis.tests.SmokeTestMagento">
+          <skipped />
+    </testcase>
+            <testcase name="testSmoke" time="0.0" classname="com.Tesis.tests.SmokeTestMagento">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>
