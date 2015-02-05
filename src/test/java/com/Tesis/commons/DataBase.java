@@ -11,10 +11,8 @@ public class DataBase {
 	private String bd = "Database1";
 
 	private Connection conexion = null;
-//	private String url = "jdbc:oracle:thin:@...." + bd;
 
 	public DataBase() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
-
 	}
 
 	public void close() throws SQLException {
