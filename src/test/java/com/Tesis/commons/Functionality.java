@@ -25,12 +25,6 @@ public class Functionality {
 		Element XML = doc.getDocumentElement();
 		return XML;
 	}
-	
-	public void flashObjects(String id)
-	{
-		
-		
-	}
 
 	public String getMessageDiv(WebElement divMessage) {
 		System.out.println("Text: " + divMessage.getText());
