@@ -25,7 +25,7 @@ public class ProductDescription {
 		this.driver = driver;
 	}
 	
-	//Definimos los mÈtodos = Acciones de la p·gina
+	//Definimos los m√©todos = Acciones de la p√°gina
 	public void typeQuantity(String quantity) {
 		qty.clear();
 		qty.sendKeys(quantity);
@@ -39,11 +39,7 @@ public class ProductDescription {
 	public ShoppingCart elegirCantidad(String quantity) {
 		typeQuantity(quantity);
 		clickAddToCartBtn();
-		
-		
-		
+
 		return PageFactory.initElements(driver, ShoppingCart.class);
 	}
-	
-	
 }
