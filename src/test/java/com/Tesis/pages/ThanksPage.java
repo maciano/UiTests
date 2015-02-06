@@ -16,29 +16,21 @@ public class ThanksPage {
 	@FindBy(how = How.CSS, using = "a[title='Log Out']")
 	private WebElement logOutBtn;
 
-	
 	//******************************************************************
-	
 	//Constructor
 	public ThanksPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-	//Definimos los mÈtodos = Acciones de la p·gina
-
+	//Definimos los m√©todos = Acciones de la p√°gina
 	public void clickOnLogOut() {
 		logOutBtn.click();
 	}
 	
-
-	
 	// Este metodo retorna la page class a la que vamos luego que esta se ejecute bien
 	public HomePage salir () {
-		
 		clickOnLogOut();
 	
 		return PageFactory.initElements(driver, HomePage.class);
 	}
-	
-	
 }
