@@ -14,15 +14,13 @@ public class ShoppingCart {
 	@FindBy(how = How.XPATH, using = "//div[2]/ul/li/button")
 	private WebElement proceedToCheckOutBtn;
 
-	
 	//******************************************************************
-	
 	//Constructor
 	public ShoppingCart(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-	//Definimos los mÈtodos = Acciones de la p·gina
+	//Definimos los m√©todos = Acciones de la p√°gina
 	public void clickOnProceedToCheckOutBtn() {
 		proceedToCheckOutBtn.click();
 	}
@@ -32,6 +30,4 @@ public class ShoppingCart {
 		clickOnProceedToCheckOutBtn();
 		return PageFactory.initElements(driver, CheckOutInformation.class);
 	}
-	
-	
 }
