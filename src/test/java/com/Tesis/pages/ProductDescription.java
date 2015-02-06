@@ -15,11 +15,8 @@ public class ProductDescription {
 	private WebElement qty;
 	@FindBy(how = How.XPATH, using = "//form[@id='product_addtocart_form']/div[2]/div[4]/div/button")
 	private WebElement addToCartBtn;
-
-
 	
 	//******************************************************************
-	
 	//Constructor
 	public ProductDescription(WebDriver driver) {
 		this.driver = driver;
