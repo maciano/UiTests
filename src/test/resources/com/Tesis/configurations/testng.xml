@@ -5,17 +5,13 @@
 	<parameter name="serverPort" value="4444" />
 	<parameter name="environmentTested" value="http://192.168.0.109/magento/index.php" />
  	<parameter name="verifyDB" value="false" />
-8080
  	<test name="Testing Android" preserve-order="false"> 
  		<parameter name="browser" value="android" /> 
  		<classes> 
  				<class name="com.Tesis.tests.SmokeTestMagento"/> 
   		</classes> 
 	</test>  
-	
- 	
- 	
-<!--  	<test name="Testing IE" preserve-order="false"> 
+  	<test name="Testing IE" preserve-order="false"> 
  		<parameter name="browser" value="iexplore" /> 
  		<classes> 
  				<class name="com.Tesis.tests.SmokeTestMagento"/> 
@@ -34,16 +30,12 @@
  		<classes> 
  				<class name="com.Tesis.tests.SmokeTestMagento"/> 
   		</classes> 
-	</test>   -->
+	</test>
 	
-<!--   	<test name="Testing HTMLunit" preserve-order="true"> 
+   	<test name="Testing HTMLunit" preserve-order="true"> 
  		<parameter name="browser" value="htmlunit" /> 
  		<classes> 
  				<class name="com.Tesis.tests.SmokeTestMagento"/> 
   		</classes> 
-	</test>      -->
-	
-	
-
-
+	</test> 
 </suite>
