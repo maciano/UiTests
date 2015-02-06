@@ -40,7 +40,7 @@ public class AddressPage {
 		this.driver = driver;
 	}
 	
-	//Definimos los mÈtodos = Acciones de la p·gina
+	//Definimos los m√©todos = Acciones de la p√°gina
 	public void typeStreet(String name) {
 		street_1.clear();
 		street_1.sendKeys(name);
@@ -49,7 +49,6 @@ public class AddressPage {
 	public void typeTel(String number) {
 		telephone.clear();
 		telephone.sendKeys(number);
-	
 	}
 	
 	public void typeCity(String name) {
@@ -58,7 +57,6 @@ public class AddressPage {
 	}
 	
 	public void typeCountry(int countryName) {
-		
 		Select sele = new Select(country);
 		sele.selectByIndex(10);
 	}
@@ -86,6 +84,4 @@ public class AddressPage {
 	
 		return PageFactory.initElements(driver, MyDashboard.class);
 	}
-	
-	
 }
