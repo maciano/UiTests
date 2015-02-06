@@ -12,7 +12,7 @@ public class DataBase {
 
 	private Connection conexion = null;
 
-	public DataBase() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+	public DataBase(){
 	}
 
 	public void close() throws SQLException {
@@ -23,8 +23,4 @@ public class DataBase {
 		Statement s = this.conexion.createStatement();
 		return s.executeQuery(sql);
 	}
-
-
-
-
 }
