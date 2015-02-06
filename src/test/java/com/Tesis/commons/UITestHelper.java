@@ -50,7 +50,6 @@ public class UITestHelper {
 		}
 	}
 	
-	
 	public void closeProperties() {
 			try {
 				is.close();
@@ -59,12 +58,10 @@ public class UITestHelper {
 			}			
 	}	
 	
-	
 	public String getProperty(String key) {
 		return prop.getProperty(key);
 	}
 
-	
 	public void setGridHub(String serverHost, String serverPort) {
 		gridHub = "http://" + serverHost + ":" + serverPort + "/wd/hub";
 	}
@@ -72,7 +69,6 @@ public class UITestHelper {
 	public String getGridHub(){
 		return gridHub;
 	}
-	
 	
 	public WebElement explicitWait(WebDriver driver, String object){
 		
@@ -102,10 +98,8 @@ public class UITestHelper {
 			capability.setBrowserName("iexplore");
 			capability.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 			capability.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
-			capability
-					.setCapability(
-							InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
-							true);
+			capability.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
+						true);
 		}
 
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -132,7 +126,7 @@ public class UITestHelper {
 	}
 	
 	public List<String> listWindows(WebDriver driver) {
-		// Obtain ids of windows.
+		// Obtenemos los Ids de las ventanas.
 		List<String> windows = new ArrayList<String>();
 
 		windows.clear();
@@ -148,7 +142,6 @@ public class UITestHelper {
 		Thread.sleep(Long.parseLong(milliseconds));
 	}
 	
-	
 	public void takeScreenShoot(WebDriver driver, ITestNGMethod testMethod) throws Exception{
 		WebDriver augmentedDriver = new Augmenter().augment(driver);
 		File screenshot = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
@@ -157,13 +150,11 @@ public class UITestHelper {
 		String path = getPath(nameScreenshot);
 		FileUtils.copyFile(screenshot, new File(path));
 		Reporter.log("<a href=\""+path+"\">"+this.getFileName(nameScreenshot)+"</a>");
-		//System.out.println("<a href=\""+path+"\">"+this.getFileName(nameScreenshot)+"</a>");
 	}
 
 	private String getFileName(String nameTest) throws IOException{
 		DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy_hh.mm.ss");
 		Date date = new Date();
-//		InetAddress ownIP = InetAddress.getLocalHost();
 		return dateFormat.format(date) + "_" +nameTest + ".png";
 	}
 
@@ -173,98 +164,63 @@ public class UITestHelper {
 		return newFileNamePath;
 	}
 	
-	
-//	public static String generateData(int length, String type)
-//	{
-//		Random rng1 = new Random();
-//		String characters ="";
-//		
-//		switch (type){
-//			case "string":
-//				  			characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ";
-//				  			break;
-//			case "password":
-//							characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789";
-//							break;
-//			case "address":
-//							characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789_ #$%&/()";
-//							break;
-//			case "number":
-//							characters = "0123456789";
-//							break;
-//			default:
-//							characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789";
-//							break;
-//		}
-//	    char[] text = new char[length];
-//	    for (int i = 0; i < length; i++)
-//	    {
-//	        text[i] = characters.charAt(rng1.nextInt(characters.length()));
-//	    }
-//	    return new String(text);
-//	}
-	
-
-	
 	public static String generateEmail(int length)
 	{
 		Random rng1 = new Random();
 		String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789";
-	    char[] text = new char[length];
-	    for (int i = 0; i < length; i++)
-	    {
-	        text[i] = characters.charAt(rng1.nextInt(characters.length()));
-	    }
-	    return new String(text)+"@email.com";
+		 char[] text = new char[length];
+		 for (int i = 0; i < length; i++)
+		 {
+		     text[i] = characters.charAt(rng1.nextInt(characters.length()));
+		 }
+		 return new String(text)+"@email.com";
 	}
-	
-	
 	
 	public static String generatePassword(int length)
 	{
 		Random rng1 = new Random();
 		String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789";
-	    char[] text = new char[length];
-	    for (int i = 0; i < length; i++)
-	    {
-	        text[i] = characters.charAt(rng1.nextInt(characters.length()));
-	    }
-	    return new String(text);
+		char[] text = new char[length];
+		for (int i = 0; i < length; i++)
+		{
+			text[i] = characters.charAt(rng1.nextInt(characters.length()));
+		}
+	    	return new String(text);
 	}
 	
 	public static String generateString(int length)
 	{
 		Random rng1 = new Random();
 		String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ";
-	    char[] text = new char[length];
-	    for (int i = 0; i < length; i++)
-	    {
-	        text[i] = characters.charAt(rng1.nextInt(characters.length()));
-	    }
-	    return new String(text);
+	    	char[] text = new char[length];
+	    	for (int i = 0; i < length; i++)
+	    	{
+			text[i] = characters.charAt(rng1.nextInt(characters.length()));
+	    	}
+	    	return new String(text);
 	}
 	
 	public static String generateAddress(int length)
 	{
 		Random rng1 = new Random();
 		String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789_ #$%&/()";
-	    char[] text = new char[length];
-	    for (int i = 0; i < length; i++)
-	    {
-	        text[i] = characters.charAt(rng1.nextInt(characters.length()));
-	    }
-	    return new String(text);
+	    	char[] text = new char[length];
+	    	for (int i = 0; i < length; i++)
+	    	{
+	        	text[i] = characters.charAt(rng1.nextInt(characters.length()));
+	    	}
+	    	return new String(text);
 	}
 	
 	public static String generateNumber(int length)
 	{
 		Random rng1 = new Random();
 		String characters = "0123456789";
-	    char[] text = new char[length];
-	    for (int i = 0; i < length; i++)
-	    {
-	        text[i] = characters.charAt(rng1.nextInt(characters.length()));
-	    }
-	    return new String(text);
+	    	char[] text = new char[length];
+	    	for (int i = 0; i < length; i++)
+	    	{
+		   text[i] = characters.charAt(rng1.nextInt(characters.length()));
+	    	}
+		 return new String(text);
 	}
 }
